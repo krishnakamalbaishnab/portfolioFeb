@@ -247,7 +247,7 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <Button className="w-full" asChild>
-                  <a href="/resume.pdf" download>
+                  <a href="./resume.pdf" download>
                     <Download className="mr-2 h-4 w-4" />
                     Download Resume
                   </a>
