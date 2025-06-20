@@ -80,20 +80,20 @@ export default function Experience() {
       school: 'Cardiff University',
       location: 'Cardiff, Wales, United Kingdom',
       period: '2018 - 2020',
-      description: 'Specialized in Artificial Intelligence and Distributed Systems. Thesis: "Real-time Data Processing in Distributed Environments"',
-      gpa: '3.9/4.0',
-      honors: ['Graduate Research Assistant', 'MIT Presidential Fellowship'],
-      coursework: ['Advanced Algorithms', 'Machine Learning', 'Distributed Systems', 'Computer Vision']
+      description: 'Specialized in Machine Learning and Distributed Systems. Thesis: "Cloud technologies for data storage, processing, and analysis, focusing on performance and scalability."',
+      gpa: '3.4/4.0',
+      honors: ['Graduate Teaching Assistant'],
+      coursework: ['Advanced Algorithms', 'Machine Learning', 'Distributed Systems', 'Computer Vision', 'Data Science','Information Security','Software Design and Development']
     },
     {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'Stanford University',
-      location: 'Stanford, CA',
+      degree: 'Bachelor of Technology in Computer Science and Engineering',
+      school: 'Don Bosco University',
+      location: 'Assam, India',
       period: '2014 - 2018',
-      description: 'Graduated Summa Cum Laude with concentration in Artificial Intelligence. President of Computer Science Society.',
-      gpa: '3.95/4.0',
-      honors: ['Summa Cum Laude', 'Phi Beta Kappa', 'Dean\'s List (8 semesters)'],
-      coursework: ['Data Structures', 'AI', 'Software Engineering', 'Human-Computer Interaction']
+      description: 'Graduated with honors along with a focus on artificial intelligence and machine learning.',
+      gpa: '3.2/4.0',
+      honors: ['Coding Seminar resource Person'],
+      coursework: ['Data Structures and Algorithm', 'AI', 'Software Engineering', 'Computer Networks','Operating Systems','Object Oriented Programming','Compiler Design','Distributed System','Computer Architecture and Organisation']
     }
   ];
 
