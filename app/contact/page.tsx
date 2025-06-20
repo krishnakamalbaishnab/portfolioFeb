@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Download } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Download, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 export default function Contact() {
@@ -47,20 +47,20 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@alexjohnson.dev',
-      href: 'mailto:hello@alexjohnson.dev'
+      value: 'kkbthefullstackdeveloper@gmail.com',
+      href: 'mailto:kkbthefullstackdeveloper@gmail.com'
     },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
-    },
+    // {
+    //   icon: Phone,
+    //   label: 'Phone',
+    //   value: '+1 (555) 123-4567',
+    //   href: 'tel:+15551234567'
+    // },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
-      href: 'https://maps.google.com/?q=San+Francisco,CA'
+      value: 'Edinburgh, United Kingdom',
+      href: 'https://www.google.co.uk/maps?q=,+Edinburgh,+,+gb'
     }
   ];
 
@@ -68,17 +68,22 @@ export default function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/alexjohnson'
+      href: 'https://github.com/krishnakamalbaishnab'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/alexjohnson'
+      href: 'https://linkedin.com/in/krishnakamalbaishnab'
     },
     {
       icon: Twitter,
       label: 'Twitter',
-      href: 'https://twitter.com/alexjohnson'
+      href: 'https://x.com/kkbaishnab'
+    },
+    {
+      icon: Instagram,
+      label: 'Twitter',
+      href: 'https://www.instagram.com/krishnakamalbaishnab/'
     }
   ];
 
