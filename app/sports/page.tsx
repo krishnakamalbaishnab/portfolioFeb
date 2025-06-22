@@ -8,17 +8,32 @@ import { Trophy, Mountain, Camera, Plane, Music, Book, Gamepad2, Dumbbell } from
 export default function Sports() {
   const activities = [
     {
-      title: 'Rock Climbing',
-      description: 'Passionate about both indoor and outdoor climbing. I love the mental and physical challenge of finding the perfect route to the top.',
-      category: 'Adventure Sports',
+      title: 'Coding & Side Projects',
+      description: 'Passionate about solving algorithm challenges and building side projects to sharpen problem-solving and development skills.',
+      category: 'Computer Science & Software Development',
       level: 'Advanced',
       achievements: [
-        'Completed El Capitan (Yosemite)',
-        '5.12a grade climber',
-        'Lead climbing certified'
+        'Completed 150+ problems on LeetCode and HackerRank',
+        'Built multiple personal projects including web apps & automation tools',
+        'Participated in coding competitions and hackathons',
       ],
-      image: 'https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=800',
-      icon: Mountain,
+      image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg',
+      icon: Book,
+      years: '10+ years'
+    },
+    {
+      title: 'Badminton',
+      description: 'Passionate about both indoor and outdoor badminton. I love the mental and physical challenge of finding the perfect way to the top.',
+      category: 'Sports',
+      level: 'Advanced',
+      achievements: [
+        'Represented District in Assam at state-level competitions',
+        'Participated in All Assam Ranking tournaments',
+        'Represented university in Inter-University Badminton Championship',
+        'Won the Inter-University Badminton Championship title'
+      ],
+      image: 'https://images.pexels.com/photos/2202685/pexels-photo-2202685.jpeg',
+      icon: Trophy,
       years: '8+ years'
     },
     {
@@ -28,12 +43,12 @@ export default function Sports() {
       level: 'Intermediate',
       achievements: [
         'Featured in local gallery',
-        '10K+ Instagram followers',
-        'Landscape photography award'
+        '2K+ Instagram and Pexel followers',
+        'Landscape photography'
       ],
       image: 'https://images.pexels.com/photos/1983032/pexels-photo-1983032.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Camera,
-      years: '5+ years'
+      years: '2.5+ years'
     },
     {
       title: 'Travel & Exploration',
@@ -41,56 +56,42 @@ export default function Sports() {
       category: 'Lifestyle',
       level: 'Enthusiast',
       achievements: [
-        'Visited 25+ countries',
-        'Backpacked through Southeast Asia',
-        'Completed Camino de Santiago'
+        'Visited 4+ countries',
+        'Backpacked through Europe',
       ],
       image: 'https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Plane,
-      years: '10+ years'
+      years: '5+ years'
     },
     {
-      title: 'Fitness & Training',
-      description: 'Maintaining physical and mental health through regular exercise, yoga, and strength training.',
-      category: 'Health & Fitness',
+      title: 'Book Reading',
+      description: 'Passionate about reading productivity and self-improvement books that inspire growth and better habits.',
+      category: 'Personal Development',
       level: 'Advanced',
       achievements: [
-        'Marathon finisher (3:45)',
-        'Yoga teacher certification',
-        'Deadlift 2x bodyweight'
+        'Read influential books like Atomic Habits, Make Epic Money, and The Power of your Subconscious Mind',
+        'Apply learnings to improve daily habits and mindset',
+        'Regular participant in book discussion groups and reading challenges'
       ],
-      image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800',
-      icon: Dumbbell,
-      years: '12+ years'
+      image: 'https://images.pexels.com/photos/1730560/pexels-photo-1730560.jpeg',
+      icon: Book,
+      // years: '9+ years'
     },
     {
-      title: 'Music Production',
-      description: 'Creating electronic music and beats in my spare time. Love experimenting with different genres and sounds.',
+      title: 'Music',
+      description: 'Enjoy listening to soft music for relaxation and play musical instruments like the flute as a hobby.',
       category: 'Creative Arts',
       level: 'Intermediate',
       achievements: [
-        'Released 3 EPs on Spotify',
-        'Performed at local venues',
-        'Collaborated with indie artists'
+        'Avid listener of soft and classical music',
+        'Play the flute and practice regularly',
+        'Performed in small community events'
       ],
       image: 'https://images.pexels.com/photos/1751731/pexels-photo-1751731.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Music,
-      years: '4+ years'
+      // years: '4+ years'
     },
-    {
-      title: 'Gaming & Esports',
-      description: 'Competitive gaming enthusiast with a focus on strategy games and FPS. Also enjoy game development as a hobby.',
-      category: 'Gaming',
-      level: 'Advanced',
-      achievements: [
-        'Diamond rank in League of Legends',
-        'Local tournament winner',
-        'Built indie game prototype'
-      ],
-      image: 'https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=800',
-      icon: Gamepad2,
-      years: '15+ years'
-    }
+    
   ];
 
   const philosophyPoints = [
@@ -256,28 +257,28 @@ export default function Sports() {
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="text-center p-4 bg-muted/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary mb-2">25+</div>
+                  <div className="text-2xl font-bold text-primary mb-2">4+</div>
                   <div className="text-sm text-muted-foreground">Countries Visited</div>
                 </div>
                 <div className="text-center p-4 bg-muted/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary mb-2">3,000+</div>
+                  <div className="text-2xl font-bold text-primary mb-2">2000+</div>
                   <div className="text-sm text-muted-foreground">Photos Taken</div>
                 </div>
                 <div className="text-center p-4 bg-muted/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary mb-2">500+</div>
-                  <div className="text-sm text-muted-foreground">Climbing Routes</div>
-                </div>
-                <div className="text-center p-4 bg-muted/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary mb-2">12</div>
-                  <div className="text-sm text-muted-foreground">Marathon Medals</div>
-                </div>
-                <div className="text-center p-4 bg-muted/50 rounded-lg">
                   <div className="text-2xl font-bold text-primary mb-2">50+</div>
-                  <div className="text-sm text-muted-foreground">Songs Produced</div>
+                  <div className="text-sm text-muted-foreground">Competition</div>
                 </div>
                 <div className="text-center p-4 bg-muted/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary mb-2">1,000+</div>
-                  <div className="text-sm text-muted-foreground">Gaming Hours</div>
+                  <div className="text-2xl font-bold text-primary mb-2">20+</div>
+                  <div className="text-sm text-muted-foreground">Sports Medals</div>
+                </div>
+                <div className="text-center p-4 bg-muted/50 rounded-lg">
+                  <div className="text-2xl font-bold text-primary mb-2">250+</div>
+                  <div className="text-sm text-muted-foreground">Songs Listened</div>
+                </div>
+                <div className="text-center p-4 bg-muted/50 rounded-lg">
+                  <div className="text-2xl font-bold text-primary mb-2">10,000+</div>
+                  <div className="text-sm text-muted-foreground">Coding Hours</div>
                 </div>
               </div>
               

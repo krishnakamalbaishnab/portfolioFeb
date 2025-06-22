@@ -9,56 +9,57 @@ import { ExternalLink, Users, Calendar, TrendingUp } from 'lucide-react';
 export default function Businesses() {
   const businesses = [
     {
-      name: 'BlazeBuster',
-      role: 'Founder & CEO',
-      period: '2022 - Present',
-      status: 'Active',
-      description: 'AI-powered wildfire prevention platform using IoT sensors and machine learning to detect and predict fire risks in real-time.',
-      industry: 'Climate Tech',
-      stage: 'Series A',
-      achievements: [
-        'Raised $2.5M in seed funding',
-        'Deployed sensors across 10,000+ acres',
-        'Prevented 15 potential wildfires',
-        'Partnership with California Fire Department'
-      ],
-      technologies: ['IoT', 'Machine Learning', 'React', 'Python', 'AWS', 'TensorFlow'],
-      website: 'https://blazebuster.com',
-      image: 'https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
       name: 'ACE Solutions',
-      role: 'Co-founder & CTO',
-      period: '2020 - 2022',
-      status: 'Acquired',
-      description: 'B2B SaaS platform for automated customer engagement and retention using predictive analytics and personalized messaging.',
-      industry: 'SaaS',
-      stage: 'Acquired by TechCorp',
+      role: 'Founding Engineer',
+      period: '2024 - Present',
+      status: 'Active',
+      description: 'A student-focused platform offering personalized guidance for studying abroad, academic support, and job search assistance. ACE Solutions helps students navigate their international education and career journey with confidence.',
+      industry: 'EdTech / Career Services',
+      stage: 'Bootstrapped',
       achievements: [
-        'Grew to $1M ARR in 18 months',
-        '200+ enterprise customers',
-        'Acquired by TechCorp for $8M',
-        '15-person team at exit'
+        'Assisted 100+ students with study abroad applications and SOP review',
+        'Provided 1-on-1 mentorship and project help for international students',
+        'Launched job-readiness programs for students targeting the UK, US, and EU',
+        'Built a network of mentors and industry professionals across 5 countries'
       ],
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'Kubernetes', 'Stripe'],
-      website: 'https://techcorp.com/ace',
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'Python','Docker'],
+      website: 'https://ace-kohl.vercel.app/',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
+
     {
-      name: 'DevTools Pro',
-      role: 'Technical Advisor',
-      period: '2023 - Present',
-      status: 'Advisory',
-      description: 'Developer productivity tools and IDE extensions that help engineering teams ship code faster and with fewer bugs.',
-      industry: 'Developer Tools',
-      stage: 'Seed',
+      name: 'BharaGhar - Rent as you like',
+      role: 'Founder',
+      period: '2025 - Present',
+      status: 'In Development',
+      description: 'A shared accommodation platform for the Indian market, designed to simplify room rentals through verified listings, roommate matchmaking, and intelligent filters for affordability and lifestyle preferences.',
+      industry: 'PropTech',
+      stage: 'MVP',
       achievements: [
-        '50K+ active developers',
-        'Featured in VS Code marketplace',
-        '$500K in seed funding',
-        'Integrated with GitHub Actions'
+        'Built a FastAPI-powered backend with MongoDB integration',
+        'Implemented intelligent search filters based on budget, location, and preferences',
+        'Designed verification workflows for listings and users',
+        'Preparing for beta launch across major Indian cities'
       ],
-      technologies: ['TypeScript', 'VS Code API', 'Electron', 'Go', 'Docker'],
+      technologies: ['Python', 'React', 'FastAPI', 'AWS', 'MongoDB', 'NextJS'],
+      website: 'https://xyz.com',
+      image: 'https://images.pexels.com/photos/7578984/pexels-photo-7578984.jpeg'
+    },
+    {
+      name: 'HelloNotes',
+      role: 'Founder & Developer',
+      period: '2025 - Present',
+      status: 'In Development',
+      description: 'A note-taking application designed for students and productivity-focused users. helloNotes helps users create, organize, and securely manage their notes from any device with a simple and responsive interface.',
+      industry: 'Developer Tools',
+      stage: 'MVP',
+      achievements: [
+        'Built with FastAPI, MongoDB, and Bootstrap for a lightweight experience',
+        'Supports organized note categories and rich-text formatting',
+        'Implements secure note storage and user authentication',
+        'Mobile-responsive design with a focus on ease of use'
+      ],
+      technologies: ['TypeScript', 'Python', 'FastAPI','Docker'],
       website: 'https://devtools.pro',
       image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800'
     }
@@ -84,9 +85,7 @@ export default function Businesses() {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Businesses</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            My entrepreneurial journey through various ventures, from founding startups
-            to advising growing companies. Each business has taught me valuable lessons
-            about building products that solve real problems.
+          My development journey through diverse projects, from building solo apps to leading backend systems and advising product architecture. Each experience has deepened my skills in creating scalable, user-focused solutions.
           </p>
         </motion.div>
 
@@ -195,7 +194,7 @@ export default function Businesses() {
             </CardHeader>
             <CardContent className="prose prose-gray dark:prose-invert max-w-none">
               <p className="text-muted-foreground">
-                Throughout my entrepreneurial journey, I've learned that the most successful
+                Throughout my development journey, I've learned that the most successful
                 businesses solve real problems for real people. My approach focuses on:
               </p>
               <ul className="space-y-2 text-muted-foreground mt-4">
