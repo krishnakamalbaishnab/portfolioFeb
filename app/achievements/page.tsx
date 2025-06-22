@@ -10,122 +10,120 @@ import { Trophy, Award, Medal, Star, ExternalLink, Calendar, Users } from 'lucid
 export default function Achievements() {
   const achievements = [
     {
-      title: 'AWS Solutions Architect Professional',
+      title: 'AWS Cloud Practitoner',
       category: 'Certification',
       organization: 'Amazon Web Services',
-      date: '2023',
+      date: '2024',
       description: 'Advanced certification demonstrating expertise in designing distributed applications and systems on the AWS platform.',
       icon: Award,
       image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
-      credentialId: 'AWS-SAP-2023-001234',
+      // credentialId: 'AWS-SAP-2023-001234',
       validUntil: '2026',
       skills: ['Cloud Architecture', 'AWS Services', 'Security', 'Cost Optimization'],
       featured: true
     },
     {
-      title: 'TechCrunch Disrupt Hackathon Winner',
+      title: 'Python Competitive Coding Winner',
       category: 'Competition',
-      organization: 'TechCrunch',
+      organization: 'LearnCodeOnline',
       date: '2023',
-      description: 'First place winner for developing an AI-powered accessibility tool that helps visually impaired users navigate digital interfaces.',
+      description: 'First place winner for coding contest in Python.',
       icon: Trophy,
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      prize: '$50,000',
-      teamSize: '4 members',
-      skills: ['AI/ML', 'Accessibility', 'React', 'Python'],
+      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg',
+      prize: '$250',
+      skills: ['DSA','Python'],
       featured: true
     },
     {
-      title: 'Dean\'s List - Computer Science',
+      title: 'Guest Speaker - Computer Science',
       category: 'Academic',
-      organization: 'MIT',
-      date: '2019-2020',
-      description: 'Recognized for academic excellence with GPA above 3.7 for consecutive semesters during Master\'s program.',
+      organization: 'Don Bosco University',
+      date: '2025',
+      description: 'Delivered an alumni talk on "Software Engineering in 2025" focusing on industry hiring trends, job search strategies, and interview preparation to inspire current students.',
       icon: Medal,
-      image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
-      gpa: '3.9/4.0',
-      duration: '4 semesters',
-      skills: ['Academic Excellence', 'Research', 'Distributed Systems'],
+      image: 'https://images.pexels.com/photos/5486096/pexels-photo-5486096.jpeg',
+      duration: '1 event',
+      skills: ['Public Speaking', 'Career Guidance', 'Software Engineering'],
       featured: true
     },
     {
-      title: 'Google Cloud Professional Developer',
+      title: 'IBM Data Science Professional Certificate',
       category: 'Certification',
-      organization: 'Google Cloud',
-      date: '2022',
-      description: 'Certification validating skills in designing, building, and deploying applications on Google Cloud Platform.',
+      organization: 'IBM',
+      date: '2023',
+      description: 'Comprehensive certification covering data science fundamentals, data analysis, visualization, and machine learning using Python and related tools.',
       icon: Award,
-      image: 'https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=800',
-      credentialId: 'GCP-PD-2022-567890',
-      validUntil: '2025',
-      skills: ['GCP Services', 'Kubernetes', 'DevOps', 'Microservices'],
+      image: 'https://images.pexels.com/photos/28792027/pexels-photo-28792027.jpeg',
+      credentialId: 'IBM-DS-2023-123456',
+      validUntil: '2026',
+      skills: ['Data Analysis', 'Python', 'Machine Learning', 'Data Visualization'],
       featured: false
     },
     {
       title: 'Outstanding Graduate Student Award',
       category: 'Academic',
-      organization: 'MIT Computer Science Department',
-      date: '2020',
+      organization: 'Cardiff University - Computer Science Department',
+      date: '2023',
       description: 'Awarded to the top 5% of graduate students for exceptional academic performance and research contributions.',
       icon: Star,
-      image: 'https://images.pexels.com/photos/3825539/pexels-photo-3825539.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/6532373/pexels-photo-6532373.jpeg',
       ranking: 'Top 5%',
       criteria: 'Academic & Research Excellence',
       skills: ['Research', 'Leadership', 'Innovation'],
       featured: false
     },
     {
-      title: 'Kubernetes Certified Application Developer',
+      title: 'Machine Learning',
       category: 'Certification',
-      organization: 'Cloud Native Computing Foundation',
-      date: '2022',
-      description: 'Hands-on certification demonstrating skills in designing and deploying cloud-native applications using Kubernetes.',
+      organization: 'Stanford University (Coursera)',
+      date: '2021',
+      description: 'Comprehensive course on machine learning concepts, algorithms, and practical applications taught by Andrew Ng.',
       icon: Award,
-      image: 'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800',
-      credentialId: 'CKAD-2022-789012',
-      validUntil: '2025',
-      skills: ['Kubernetes', 'Docker', 'Cloud Native', 'DevOps'],
+      image: 'https://images.pexels.com/photos/8386363/pexels-photo-8386363.jpeg',
+      // credentialId: 'ML-STANFORD-2023-345678',
+      // validUntil: '2026',
+      skills: ['Machine Learning', 'Supervised Learning', 'Unsupervised Learning', 'Regression'],
       featured: false
     },
-    {
-      title: 'Stanford Entrepreneurship Challenge Finalist',
-      category: 'Competition',
-      organization: 'Stanford University',
-      date: '2018',
-      description: 'Top 10 finalist in university-wide entrepreneurship competition for innovative startup idea in climate technology.',
-      icon: Trophy,
-      image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800',
-      placement: 'Top 10 Finalist',
-      participants: '200+ teams',
-      skills: ['Entrepreneurship', 'Climate Tech', 'Business Strategy'],
-      featured: false
-    },
-    {
-      title: 'Phi Beta Kappa Honor Society',
-      category: 'Honor Society',
-      organization: 'Stanford University',
-      date: '2018',
-      description: 'Inducted into the nation\'s most prestigious academic honor society for exceptional academic achievement.',
-      icon: Medal,
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      requirement: 'Top 10% GPA',
-      membership: 'Lifetime',
-      skills: ['Academic Excellence', 'Liberal Arts', 'Critical Thinking'],
-      featured: false
-    },
-    {
-      title: 'IEEE Best Paper Award',
-      category: 'Publication',
-      organization: 'IEEE International Conference on Distributed Computing',
-      date: '2020',
-      description: 'Best paper award for research on fault-tolerant stream processing in distributed systems.',
-      icon: Star,
-      image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800',
-      paperTitle: 'Fault-Tolerant Stream Processing with Minimal Latency',
-      coAuthors: '3 co-authors',
-      skills: ['Research', 'Distributed Systems', 'Academic Writing'],
-      featured: false
-    }
+    // {
+    //   title: 'Stanford Entrepreneurship Challenge Finalist',
+    //   category: 'Competition',
+    //   organization: 'Stanford University',
+    //   date: '2018',
+    //   description: 'Top 10 finalist in university-wide entrepreneurship competition for innovative startup idea in climate technology.',
+    //   icon: Trophy,
+    //   image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   placement: 'Top 10 Finalist',
+    //   participants: '200+ teams',
+    //   skills: ['Entrepreneurship', 'Climate Tech', 'Business Strategy'],
+    //   featured: false
+    // },
+    // {
+    //   title: 'Phi Beta Kappa Honor Society',
+    //   category: 'Honor Society',
+    //   organization: 'Stanford University',
+    //   date: '2018',
+    //   description: 'Inducted into the nation\'s most prestigious academic honor society for exceptional academic achievement.',
+    //   icon: Medal,
+    //   image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   requirement: 'Top 10% GPA',
+    //   membership: 'Lifetime',
+    //   skills: ['Academic Excellence', 'Liberal Arts', 'Critical Thinking'],
+    //   featured: false
+    // },
+    // {
+    //   title: 'IEEE Best Paper Award',
+    //   category: 'Publication',
+    //   organization: 'IEEE International Conference on Distributed Computing',
+    //   date: '2020',
+    //   description: 'Best paper award for research on fault-tolerant stream processing in distributed systems.',
+    //   icon: Star,
+    //   image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   paperTitle: 'Fault-Tolerant Stream Processing with Minimal Latency',
+    //   coAuthors: '3 co-authors',
+    //   skills: ['Research', 'Distributed Systems', 'Academic Writing'],
+    //   featured: false
+    // }
   ];
 
   const stats = [
@@ -135,7 +133,7 @@ export default function Achievements() {
     { label: 'Academic Honors', value: '12', icon: Star }
   ];
 
-  const categories = ['All', 'Certification', 'Competition', 'Academic', 'Honor Society', 'Publication'];
+  const categories = ['All', 'Certification', 'Competition', 'Academic'];
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const filteredAchievements = selectedCategory === 'All' 
