@@ -9,98 +9,98 @@ import { ExternalLink, FileText, Users, Calendar, Award, BookOpen } from 'lucide
 export default function Research() {
   const researchProjects = [
     {
-      title: 'Real-time Data Processing in Distributed Environments',
+      title: 'Performance and Scalability Assessment of Cloud Computing for Data Workloads',
       type: 'Master\'s Thesis',
-      institution: 'MIT',
-      period: '2019 - 2020',
-      status: 'Published',
-      description: 'Developed novel algorithms for processing streaming data across distributed systems with focus on fault tolerance and low-latency requirements. The research addresses challenges in maintaining consistency while achieving high throughput in real-time applications.',
-      technologies: ['Apache Kafka', 'Apache Flink', 'Kubernetes', 'Go', 'Python'],
-      collaborators: ['Dr. Sarah Chen', 'Prof. Michael Rodriguez'],
+      institution: 'Cardiff University',
+      period: '2022 - 2023',
+      status: 'Not - Published',
+      description: 'Explored the use of cloud computing technologies for scalable data storage, processing, and analysis. The project focused on evaluating various cloud platforms and architectures to handle large-scale datasets efficiently. Emphasis was placed on identifying methods to assess performance, cost-effectiveness, and scalability across different cloud service models, providing insights into optimal cloud deployment strategies for data-intensive applications.',
+      technologies: ['AWS', 'GCP', 'Kubernetes', 'Docker', 'Python', 'Cloud Technologies'],
+      collaborators: ['Dr. Wan Nor Ashikin'],
       publications: [
-        {
-          title: 'Fault-Tolerant Stream Processing with Minimal Latency',
-          venue: 'IEEE International Conference on Distributed Computing Systems',
-          year: '2020',
-          url: 'https://ieeexplore.ieee.org/document/example'
-        }
+        // {
+        //   title: 'Fault-Tolerant Stream Processing with Minimal Latency',
+        //   venue: 'IEEE International Conference on Distributed Computing Systems',
+        //   year: '2020',
+        //   url: 'https://ieeexplore.ieee.org/document/example'
+        // }
       ],
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/2881229/pexels-photo-2881229.jpeg',
       featured: true
     },
     {
       title: 'Machine Learning Applications in Healthcare Diagnostics',
       type: 'Research Project',
-      institution: 'MIT AI Lab',
-      period: '2019 - 2020',
-      status: 'Published',
-      description: 'Investigated the application of deep learning models for early detection of cardiovascular diseases using ECG data. Developed a CNN-based approach that achieved 94% accuracy in identifying arrhythmias.',
+      institution: 'Don Bosco University',
+      period: '2020 - 2021',
+      status: 'Not - Published',
+      description: 'Investigated the application of deep learning models for early detection of diabetes using patient health records. Developed a CNN-based approach that achieved 94% accuracy in identifying diabetic conditions, enabling proactive healthcare interventions.',
       technologies: ['TensorFlow', 'Python', 'Keras', 'OpenCV', 'NumPy'],
-      collaborators: ['Dr. Emily Watson', 'Medical Center Partners'],
+      collaborators: ['Dr. Alok Choudhury', 'Mriganka Mousom Gogoi'],
       publications: [
-        {
-          title: 'Deep Learning for ECG-based Arrhythmia Detection',
-          venue: 'Journal of Medical AI',
-          year: '2020',
-          url: 'https://example.com/medical-ai-journal'
-        }
+        // {
+        //   title: 'Deep Learning for ECG-based Arrhythmia Detection',
+        //   venue: 'Journal of Medical AI',
+        //   year: '2020',
+        //   url: 'https://example.com/medical-ai-journal'
+        // }
       ],
       image: 'https://images.pexels.com/photos/3825539/pexels-photo-3825539.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: true
     },
-    {
-      title: 'Human-Computer Interaction in Virtual Reality Environments',
-      type: 'Research Study',
-      institution: 'Stanford HCI Lab',
-      period: '2017 - 2018',
-      status: 'Published',
-      description: 'Conducted user studies on interaction paradigms in VR environments, focusing on gesture recognition and haptic feedback. The research contributed to understanding how users adapt to immersive interfaces.',
-      technologies: ['Unity', 'C#', 'Oculus SDK', 'Leap Motion', 'MATLAB'],
-      collaborators: ['Prof. David Kim', 'VR Research Team'],
-      publications: [
-        {
-          title: 'Gesture-based Interaction in Virtual Reality: A User Study',
-          venue: 'ACM Conference on Human Factors in Computing Systems',
-          year: '2018',
-          url: 'https://dl.acm.org/doi/example'
-        }
-      ],
-      image: 'https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=800',
-      featured: false
-    },
-    {
-      title: 'Blockchain Consensus Mechanisms for IoT Networks',
-      type: 'Independent Research',
-      institution: 'Self-directed',
-      period: '2021 - 2022',
-      status: 'In Progress',
-      description: 'Exploring lightweight consensus algorithms suitable for resource-constrained IoT devices. The research aims to develop energy-efficient blockchain solutions for secure IoT communications.',
-      technologies: ['Solidity', 'Go', 'Raspberry Pi', 'MQTT', 'Docker'],
-      collaborators: ['Blockchain Research Community'],
-      publications: [],
-      image: 'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800',
-      featured: false
-    },
-    {
-      title: 'Optimization of Microservice Architectures',
-      type: 'Industry Research',
-      institution: 'TechCorp R&D',
-      period: '2022 - Present',
-      status: 'Ongoing',
-      description: 'Leading research on automated optimization of microservice deployments using machine learning. The project focuses on resource allocation, service mesh optimization, and predictive scaling.',
-      technologies: ['Kubernetes', 'Istio', 'Prometheus', 'Python', 'TensorFlow'],
-      collaborators: ['TechCorp Engineering Team'],
-      publications: [
-        {
-          title: 'ML-driven Microservice Optimization',
-          venue: 'IEEE Cloud Computing Conference',
-          year: '2023',
-          url: 'https://ieeexplore.ieee.org/document/example2'
-        }
-      ],
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
-      featured: false
-    }
+    // {
+    //   title: 'Human-Computer Interaction in Virtual Reality Environments',
+    //   type: 'Research Study',
+    //   institution: 'Stanford HCI Lab',
+    //   period: '2017 - 2018',
+    //   status: 'Published',
+    //   description: 'Conducted user studies on interaction paradigms in VR environments, focusing on gesture recognition and haptic feedback. The research contributed to understanding how users adapt to immersive interfaces.',
+    //   technologies: ['Unity', 'C#', 'Oculus SDK', 'Leap Motion', 'MATLAB'],
+    //   collaborators: ['Prof. David Kim', 'VR Research Team'],
+    //   publications: [
+    //     {
+    //       title: 'Gesture-based Interaction in Virtual Reality: A User Study',
+    //       venue: 'ACM Conference on Human Factors in Computing Systems',
+    //       year: '2018',
+    //       url: 'https://dl.acm.org/doi/example'
+    //     }
+    //   ],
+    //   image: 'https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   featured: false
+    // },
+    // {
+    //   title: 'Blockchain Consensus Mechanisms for IoT Networks',
+    //   type: 'Independent Research',
+    //   institution: 'Self-directed',
+    //   period: '2021 - 2022',
+    //   status: 'In Progress',
+    //   description: 'Exploring lightweight consensus algorithms suitable for resource-constrained IoT devices. The research aims to develop energy-efficient blockchain solutions for secure IoT communications.',
+    //   technologies: ['Solidity', 'Go', 'Raspberry Pi', 'MQTT', 'Docker'],
+    //   collaborators: ['Blockchain Research Community'],
+    //   publications: [],
+    //   image: 'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   featured: false
+    // },
+    // {
+    //   title: 'Optimization of Microservice Architectures',
+    //   type: 'Industry Research',
+    //   institution: 'TechCorp R&D',
+    //   period: '2022 - Present',
+    //   status: 'Ongoing',
+    //   description: 'Leading research on automated optimization of microservice deployments using machine learning. The project focuses on resource allocation, service mesh optimization, and predictive scaling.',
+    //   technologies: ['Kubernetes', 'Istio', 'Prometheus', 'Python', 'TensorFlow'],
+    //   collaborators: ['TechCorp Engineering Team'],
+    //   publications: [
+    //     {
+    //       title: 'ML-driven Microservice Optimization',
+    //       venue: 'IEEE Cloud Computing Conference',
+    //       year: '2023',
+    //       url: 'https://ieeexplore.ieee.org/document/example2'
+    //     }
+    //   ],
+    //   image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   featured: false
+    // }
   ];
 
   const researchInterests = [
