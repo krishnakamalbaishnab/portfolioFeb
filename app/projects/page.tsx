@@ -11,79 +11,79 @@ import Link from 'next/link';
 export default function Projects() {
   const projects = [
     {
-      title: 'AI-Powered Task Manager',
-      description: 'A smart task management application that uses machine learning to prioritize tasks, predict completion times, and suggest optimal schedules. Features natural language processing for task creation and intelligent deadline recommendations.',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'OpenAI API', 'PostgreSQL', 'TensorFlow', 'Redis'],
+      title: 'BharaGhar - Rent as you like',
+      description: 'A smart shared accommodation platform tailored for the Indian market. BharaGhar simplifies room rentals with verified listings, roommate matchmaking, and intelligent filters for affordability, location, and preferences. Built with a FastAPI backend, it focuses on trust, convenience, and a seamless user experience for students and working professionals. (Codes are in private repo currently)',
+      image: 'https://images.pexels.com/photos/7578984/pexels-photo-7578984.jpeg',
+      technologies: ['NextJs', 'Node.js', 'OpenAI API', 'Python', 'FastAPI', 'MongoDB'],
       category: 'Web Development',
-      status: 'Live',
-      githubUrl: 'https://github.com/alexjohnson/ai-task-manager',
+      status: 'In Development',
+      githubUrl: 'https://github.com/krishnakamalbaishnab/bharaghar',
       liveUrl: 'https://ai-taskmanager.com',
       featured: true,
       stats: { stars: 234, forks: 45 }
     },
     {
-      title: 'E-commerce Platform',
-      description: 'A full-featured e-commerce platform built with Next.js and Stripe. Includes inventory management, order tracking, payment processing, and admin dashboard. Supports multiple currencies and payment methods.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'Stripe', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'Vercel'],
-      category: 'Full Stack',
-      status: 'Live',
-      githubUrl: 'https://github.com/alexjohnson/ecommerce-platform',
+      title: 'HelloNotes - Capture & Recall',
+      description: 'A minimal and efficient note-taking web app designed for students and productivity-focused users. Built using FastAPI, MongoDB, and Bootstrap, helloNotes allows users to create, organize, and manage their notes seamlessly. With a focus on speed and simplicity, it supports rich-text formatting, secure storage, and easy retrieval—making note-taking effortless and accessible from any device.(Codes are in private repo currently)',
+      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'FastAPI', 'MondoDB', 'Bootstrap', 'NodeJS', 'Vercel'],
+      category: 'Web Development',
+      status: 'In Development',
+      githubUrl: 'https://github.com/krishnakamalbaishnab/Hello-Notes',
       liveUrl: 'https://shop-demo.vercel.app',
       featured: true,
       stats: { stars: 189, forks: 67 }
     },
     {
-      title: 'Mobile Fitness App',
-      description: 'Cross-platform mobile app for fitness tracking with real-time workout analytics, social features, and personalized training plans. Integrates with wearable devices and health APIs.',
-      image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React Native', 'Firebase', 'Node.js', 'MongoDB', 'HealthKit', 'Google Fit'],
-      category: 'Mobile Development',
+      title: 'CryptoForecast - Invest Smart',
+      description: 'A predictive analytics tool that leverages historical market data and machine learning to forecast cryptocurrency trends. CryptoForecast helps users make informed investment decisions by providing future price predictions, volatility analysis, and trend visualizations. Designed with a focus on accuracy and usability, it empowers both new and seasoned investors to navigate the crypto market with confidence.',
+      image: 'https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg',
+      technologies: ['Python', 'Keras', 'TensorFllow', 'LSTM', 'Numpy & pandas', 'SkLearn','Render'],
+      category: 'Machine Learning & AI',
       status: 'Live',
-      githubUrl: 'https://github.com/alexjohnson/fitness-app',
-      liveUrl: 'https://apps.apple.com/app/fittrack',
+      githubUrl: 'https://github.com/krishnakamalbaishnab/AI-Driven-Investment/tree/main',
+      liveUrl: 'https://ai-driven-investment.onrender.com/',
       featured: true,
       stats: { stars: 156, forks: 23 }
     },
     {
-      title: 'Real-time Chat Application',
-      description: 'Scalable real-time chat application with support for multiple rooms, file sharing, video calls, and message encryption. Built with WebSocket technology for instant messaging.',
-      image: 'https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB', 'WebRTC', 'JWT'],
-      category: 'Web Development',
+      title: 'Habit Tracker',
+      description: 'A productivity-focused Chrome extension that tracks your browsing behavior and encourages positive habits through a points-based reward system. Built with JavaScript and the Chrome Extension API, BrowseBetter monitors website usage in real-time, helping users stay accountable and focused. It gamifies self-discipline by assigning scores based on browsing patterns, making habit-building fun and measurable.',
+      image: 'https://images.pexels.com/photos/4025372/pexels-photo-4025372.jpeg',
+      technologies: ['JavaScript', 'Chrome Extension API', 'ManifestV3', 'HTML5'],
+      category: 'API - Extension',
       status: 'Live',
-      githubUrl: 'https://github.com/alexjohnson/chat-app',
+      githubUrl: 'https://github.com/krishnakamalbaishnab/HabitTracker',
       liveUrl: 'https://realtime-chat-demo.com',
       featured: false,
       stats: { stars: 98, forks: 34 }
     },
     {
-      title: 'Blockchain Voting System',
-      description: 'Secure and transparent voting system built on blockchain technology. Ensures vote integrity, anonymity, and provides real-time results with full audit trails.',
-      image: 'https://images.pexels.com/photos/1550337/pexels-photo-1550337.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'MetaMask', 'IPFS'],
-      category: 'Blockchain',
-      status: 'In Development',
-      githubUrl: 'https://github.com/alexjohnson/blockchain-voting',
+      title: 'E-Commerce Data Insights',
+      description: 'An end-to-end data analysis project focused on uncovering patterns in customer behavior, sales trends, and product performance from an e-commerce dataset. The project involved data cleaning, exploratory data analysis (EDA), and visual storytelling to generate actionable business insights. Additionally, machine learning techniques like XGBoost were used to predict customer purchase behavior and identify high-value products.',
+      image: 'https://images.pexels.com/photos/7681091/pexels-photo-7681091.jpeg',
+      technologies: ['EDA', 'Python', 'XGBoost', 'Machine Learning', 'Data Ecience'],
+      category: 'Data Science and Machine Learning',
+      status: 'Live',
+      githubUrl: 'https://github.com/krishnakamalbaishnab/EDA-on-E--Commerce-Data',
       featured: false,
       stats: { stars: 76, forks: 12 }
     },
     {
-      title: 'DevOps Monitoring Dashboard',
-      description: 'Comprehensive monitoring dashboard for DevOps teams. Tracks application performance, server metrics, deployment status, and provides intelligent alerting.',
-      image: 'https://images.pexels.com/photos/159211/headway-537308-unsplash-159211.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Vue.js', 'Go', 'InfluxDB', 'Grafana', 'Docker', 'Kubernetes'],
-      category: 'DevOps',
+      title: 'AttriPredict',
+      description: 'AttriPredict is a web-based machine learning tool designed to predict employee attrition with over 80% accuracy. Developed using Random Forest and integrated with a Flask interface, it enables HR teams to input employee data and receive real-time risk predictions. The project combines EDA, feature engineering, and visualization to identify key factors driving attrition, supporting data-driven retention strategies..',
+      image: 'https://images.pexels.com/photos/5716037/pexels-photo-5716037.jpeg',
+      technologies: ['Python', 'Flask', 'EDA', 'SkLearn', 'Numpy & Pandas','Regression','Docker','Render'],
+      category: 'Machine Learning & AI',
       status: 'Live',
-      githubUrl: 'https://github.com/alexjohnson/devops-dashboard',
-      liveUrl: 'https://devops-monitor.com',
+      githubUrl: 'https://github.com/krishnakamalbaishnab/Predict-Employee-Attrition-Using-this-Web-App',
+      liveUrl: 'https://predict-employee-attrition-using-this-w9dc.onrender.com/',
       featured: false,
       stats: { stars: 143, forks: 28 }
     }
   ];
 
-  const categories = ['All', 'Web Development', 'Mobile Development', 'Full Stack', 'Blockchain', 'DevOps'];
+  const categories = ['All', 'Web Development','Data Science and Machine Learning', 'Machine Learning & AI','API - Extension'];
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const filteredProjects = selectedCategory === 'All' 
@@ -103,8 +103,8 @@ export default function Projects() {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Projects</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A collection of projects I've built, from web applications and mobile apps
-            to blockchain solutions and DevOps tools. Each project represents a unique
+            A collection of projects I've built, from web applications and Data Science, Machine Learning and AI
+            solutions and DevOps tools. Each project represents a unique
             challenge and learning opportunity.
           </p>
         </motion.div>
