@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Calendar, Clock, Search, User } from 'lucide-react';
-import Link from 'next/link';
+// Note: Blog posts are hosted on Medium for better SEO and audience reach
 
 export default function Blog() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -20,7 +20,7 @@ export default function Blog() {
       category: 'Tech',
       date: '2024-12-15',
       readTime: '8 min read',
-      slug: 'future-of-web-development',
+      mediumUrl: 'https://medium.com/@krishnakamalbaishnab/future-of-web-development-2025',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: true
     },
@@ -30,7 +30,7 @@ export default function Blog() {
       category: 'Career',
       date: '2024-11-28',
       readTime: '12 min read',
-      slug: 'building-remote-team',
+      mediumUrl: 'https://medium.com/@krishnakamalbaishnab/building-remote-team-lessons',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: true
     },
@@ -40,7 +40,7 @@ export default function Blog() {
       category: 'Reflections',
       date: '2024-11-10',
       readTime: '15 min read',
-      slug: 'startup-lessons',
+      mediumUrl: 'https://medium.com/@krishnakamalbaishnab/startup-lessons-blazebuster',
       image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: false
     },
@@ -50,7 +50,7 @@ export default function Blog() {
       category: 'Tech',
       date: '2024-10-22',
       readTime: '10 min read',
-      slug: 'art-of-code-review',
+      mediumUrl: 'https://medium.com/@krishnakamalbaishnab/art-of-code-review',
       image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: false
     },
@@ -60,7 +60,7 @@ export default function Blog() {
       category: 'Career',
       date: '2024-10-05',
       readTime: '11 min read',
-      slug: 'engineer-to-tech-lead',
+      mediumUrl: 'https://medium.com/@krishnakamalbaishnab/engineer-to-tech-lead',
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: false
     },
@@ -70,7 +70,7 @@ export default function Blog() {
       category: 'Tech',
       date: '2024-09-18',
       readTime: '7 min read',
-      slug: 'boring-technology',
+      mediumUrl: 'https://medium.com/@krishnakamalbaishnab/boring-technology',
       image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: false
     }
@@ -114,7 +114,7 @@ export default function Blog() {
             <h2 className="text-3xl font-bold mb-8">Featured Posts</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {featuredPosts.map((post, index) => (
-                <FeaturedPostCard key={post.slug} post={post} index={index} />
+                <FeaturedPostCard key={post.title} post={post} index={index} />
               ))}
             </div>
           </motion.section>
@@ -166,7 +166,7 @@ export default function Blog() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredPosts.map((post, index) => (
-                <BlogPostCard key={post.slug} post={post} index={index} />
+                <BlogPostCard key={post.title} post={post} index={index} />
               ))}
             </div>
           )}
@@ -184,7 +184,7 @@ function FeaturedPostCard({ post, index }: { post: any; index: number }) {
       transition={{ duration: 0.5, delay: 0.1 * index }}
       className="group"
     >
-      <Link href={`/blog/${post.slug}`}>
+      <a href={post.mediumUrl} target="_blank" rel="noopener noreferrer">
         <Card className="h-full hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer">
           <div className="relative">
             <div className="aspect-video overflow-hidden">
@@ -226,7 +226,7 @@ function FeaturedPostCard({ post, index }: { post: any; index: number }) {
             </div>
           </CardContent>
         </Card>
-      </Link>
+      </a>
     </motion.div>
   );
 }
@@ -239,7 +239,7 @@ function BlogPostCard({ post, index }: { post: any; index: number }) {
       transition={{ duration: 0.5, delay: 0.1 * index }}
       className="group"
     >
-      <Link href={`/blog/${post.slug}`}>
+      <a href={post.mediumUrl} target="_blank" rel="noopener noreferrer">
         <Card className="h-full hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer">
           <div className="relative">
             <div className="aspect-video overflow-hidden">
@@ -276,7 +276,7 @@ function BlogPostCard({ post, index }: { post: any; index: number }) {
             </div>
           </CardContent>
         </Card>
-      </Link>
+      </a>
     </motion.div>
   );
 }
