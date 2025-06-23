@@ -20,7 +20,7 @@ export default function Blog() {
       category: 'Tech',
       date: '2024-12-15',
       readTime: '8 min read',
-      mediumUrl: 'https://medium.com/@krishnakamalbaishnab/future-of-web-development-2025',
+      mediumUrl: 'https://krishnakamalbaishnab.medium.com/software-engineering-in-2025-hiring-trends-career-strategies-9e3fb16f120d',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: true
     },
