@@ -7,8 +7,32 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Trophy, Award, Medal, Star, ExternalLink, Calendar, Users } from 'lucide-react';
 
+interface Achievement {
+  title: string;
+  category: string;
+  organization: string;
+  date: string;
+  description: string;
+  icon: any;
+  image: string;
+  featured: boolean;
+  skills: string[];
+  credentialId?: string;
+  validUntil?: string;
+  prize?: string;
+  duration?: string;
+  ranking?: string;
+  criteria?: string;
+  placement?: string;
+  participants?: string;
+  requirement?: string;
+  membership?: string;
+  paperTitle?: string;
+  coAuthors?: string;
+}
+
 export default function Achievements() {
-  const achievements = [
+  const achievements: Achievement[] = [
     {
       title: 'AWS Cloud Practitoner',
       category: 'Certification',
@@ -314,12 +338,6 @@ export default function Achievements() {
                               <span className="ml-2 text-muted-foreground">{achievement.prize}</span>
                             </div>
                           )}
-                          {achievement.gpa && (
-                            <div>
-                              <span className="font-medium">GPA:</span>
-                              <span className="ml-2 text-muted-foreground">{achievement.gpa}</span>
-                            </div>
-                          )}
                           {achievement.placement && (
                             <div>
                               <span className="font-medium">Placement:</span>
@@ -337,7 +355,7 @@ export default function Achievements() {
                         <div>
                           <h4 className="font-medium mb-2">Related Skills:</h4>
                           <div className="flex flex-wrap gap-2">
-                            {achievement.skills.map((skill) => (
+                            {achievement.skills.map((skill: string) => (
                               <Badge key={skill} variant="secondary" className="text-xs">
                                 {skill}
                               </Badge>
@@ -392,7 +410,7 @@ export default function Achievements() {
   );
 }
 
-function FeaturedAchievementCard({ achievement, index }: { achievement: any; index: number }) {
+function FeaturedAchievementCard({ achievement, index }: { achievement: Achievement; index: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -445,7 +463,7 @@ function FeaturedAchievementCard({ achievement, index }: { achievement: any; ind
           <div>
             <h4 className="font-medium mb-2">Skills:</h4>
             <div className="flex flex-wrap gap-1">
-              {achievement.skills.slice(0, 3).map((skill) => (
+              {achievement.skills.slice(0, 3).map((skill: string) => (
                 <Badge key={skill} variant="secondary" className="text-xs">
                   {skill}
                 </Badge>

@@ -6,8 +6,29 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, FileText, Users, Calendar, Award, BookOpen } from 'lucide-react';
 
+interface Publication {
+  title: string;
+  venue: string;
+  year: string;
+  url: string;
+}
+
+interface ResearchProject {
+  title: string;
+  type: string;
+  institution: string;
+  period: string;
+  status: string;
+  description: string;
+  technologies: string[];
+  collaborators: string[];
+  publications: Publication[];
+  image: string;
+  featured: boolean;
+}
+
 export default function Research() {
-  const researchProjects = [
+  const researchProjects: ResearchProject[] = [
     {
       title: 'Performance and Scalability Assessment of Cloud Computing for Data Workloads',
       type: 'Master\'s Thesis',
@@ -175,7 +196,7 @@ export default function Research() {
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
-                {researchInterests.map((interest) => (
+                {researchInterests.map((interest: string) => (
                   <Badge key={interest} variant="secondary" className="text-sm">
                     {interest}
                   </Badge>
@@ -243,7 +264,7 @@ export default function Research() {
                             Collaborators
                           </h4>
                           <div className="flex flex-wrap gap-2">
-                            {project.collaborators.map((collaborator) => (
+                            {project.collaborators.map((collaborator: string) => (
                               <Badge key={collaborator} variant="outline" className="text-xs">
                                 {collaborator}
                               </Badge>
@@ -254,7 +275,7 @@ export default function Research() {
                         <div>
                           <h4 className="font-medium mb-3">Technologies Used</h4>
                           <div className="flex flex-wrap gap-2">
-                            {project.technologies.map((tech) => (
+                            {project.technologies.map((tech: string) => (
                               <Badge key={tech} variant="secondary" className="text-xs">
                                 {tech}
                               </Badge>
@@ -269,7 +290,7 @@ export default function Research() {
                               Publications
                             </h4>
                             <div className="space-y-2">
-                              {project.publications.map((pub, idx) => (
+                              {project.publications.map((pub: Publication, idx: number) => (
                                 <div key={idx} className="p-3 bg-muted/50 rounded-lg">
                                   <div className="flex items-start justify-between">
                                     <div className="flex-1">
@@ -339,7 +360,7 @@ export default function Research() {
   );
 }
 
-function FeaturedResearchCard({ project, index }: { project: any; index: number }) {
+function FeaturedResearchCard({ project, index }: { project: ResearchProject; index: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -393,7 +414,7 @@ function FeaturedResearchCard({ project, index }: { project: any; index: number 
           <div>
             <h4 className="font-medium mb-2">Technologies:</h4>
             <div className="flex flex-wrap gap-1">
-              {project.technologies.slice(0, 4).map((tech) => (
+              {project.technologies.slice(0, 4).map((tech: string) => (
                 <Badge key={tech} variant="secondary" className="text-xs">
                   {tech}
                 </Badge>
