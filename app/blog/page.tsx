@@ -15,7 +15,7 @@ export default function Blog() {
 
   const blogPosts = [
     {
-      title: 'The Future of Web Development: Trends to Watch in 2025',
+      title: 'Software Engineering in 2025: Hiring Trends & Career Strategies',
       excerpt: 'Exploring the cutting-edge technologies and methodologies that will shape web development in 2025 and beyond.',
       category: 'Tech',
       date: '2024-12-15',
