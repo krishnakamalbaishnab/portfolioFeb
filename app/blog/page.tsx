@@ -19,7 +19,7 @@ export default function Blog() {
       excerpt: 'Exploring the cutting-edge technologies and methodologies that will shape web development in 2025 and beyond.',
       category: 'Tech',
       date: '2024-12-15',
-      readTime: '8 min read',
+      readTime: '4 min read',
       mediumUrl: 'https://medium.com/@krishnakamalbaishnab/software-engineering-in-2025-hiring-trends-career-strategies-9e3fb16f120d',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
       featured: true
